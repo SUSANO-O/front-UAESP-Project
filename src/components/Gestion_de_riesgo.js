@@ -1,17 +1,12 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
 
-function View1() {
+function GestionRiesgosForm() {
     return (
-        <div className="container mt-5">
-            <h2>Formulario de Oportunidades</h2>
+        <div className="container">
+            <h2>Gestión de Riesgos</h2>
             <form>
                 <div className="row">
                     <div className="col-md-6">
-                        <div className="form-group">
-                            <label>Referencia</label>
-                            <input type="number" className="form-control" placeholder="Referencia" />
-                        </div>
                         <div className="form-group">
                             <label>Proceso</label>
                             <input type="text" className="form-control" placeholder="Proceso" />
@@ -34,7 +29,7 @@ function View1() {
                         </div>
                         <div className="form-group">
                             <label>Descripción de la Oportunidad</label>
-                            <textarea className="form-control" placeholder="Descripción de la Oportunidad"></textarea>
+                            <input type="text" className="form-control" placeholder="Descripción de la Oportunidad" />
                         </div>
                         <div className="form-group">
                             <label>Acción</label>
@@ -44,64 +39,67 @@ function View1() {
                             <label>Responsable</label>
                             <input type="text" className="form-control" placeholder="Responsable" />
                         </div>
-                    </div>
-
-                    <div className="col-md-6">
+                        <div className="form-group">
+                            <label>Fecha Programada</label>
+                            <input type="date" className="form-control" placeholder="Fecha Programada" />
+                        </div>
                         <div className="form-group">
                             <label>Fecha Seguimiento Primer Trimestre</label>
-                            <input type="date" className="form-control" />
+                            <input type="date" className="form-control" placeholder="Fecha Seguimiento Primer Trimestre" />
                         </div>
                         <div className="form-group">
                             <label>Seguimiento Primer Trimestre</label>
-                            <textarea className="form-control" placeholder="Seguimiento Primer Trimestre"></textarea>
+                            <input type="text" className="form-control" placeholder="Seguimiento Primer Trimestre" />
                         </div>
                         <div className="form-group">
                             <label>Fecha Seguimiento Segundo Trimestre</label>
-                            <input type="date" className="form-control" />
+                            <input type="date" className="form-control" placeholder="Fecha Seguimiento Segundo Trimestre" />
                         </div>
                         <div className="form-group">
                             <label>Seguimiento Segundo Trimestre</label>
-                            <textarea className="form-control" placeholder="Seguimiento Segundo Trimestre"></textarea>
+                            <input type="text" className="form-control" placeholder="Seguimiento Segundo Trimestre" />
                         </div>
+                    </div>
+                    <div className="col-md-6">
                         <div className="form-group">
                             <label>Fecha Seguimiento Tercer Trimestre</label>
-                            <input type="date" className="form-control" />
+                            <input type="date" className="form-control" placeholder="Fecha Seguimiento Tercer Trimestre" />
                         </div>
                         <div className="form-group">
                             <label>Seguimiento Tercer Trimestre</label>
-                            <textarea className="form-control" placeholder="Seguimiento Tercer Trimestre"></textarea>
+                            <input type="text" className="form-control" placeholder="Seguimiento Tercer Trimestre" />
                         </div>
                         <div className="form-group">
                             <label>Fecha Seguimiento Cuarto Trimestre</label>
-                            <input type="date" className="form-control" />
+                            <input type="date" className="form-control" placeholder="Fecha Seguimiento Cuarto Trimestre" />
                         </div>
                         <div className="form-group">
                             <label>Seguimiento Cuarto Trimestre</label>
-                            <textarea className="form-control" placeholder="Seguimiento Cuarto Trimestre"></textarea>
+                            <input type="text" className="form-control" placeholder="Seguimiento Cuarto Trimestre" />
                         </div>
                         <div className="form-group">
                             <label>Estado</label>
                             <input type="text" className="form-control" placeholder="Estado" />
                         </div>
                         <div className="form-group">
-                            <label>Fecha Seguimiento Control y Soportes</label>
-                            <input type="date" className="form-control" />
+                            <label>Fecha Seguimiento CyS</label>
+                            <input type="date" className="form-control" placeholder="Fecha Seguimiento CyS" />
                         </div>
                         <div className="form-group">
                             <label>Seguimiento Control y Soportes</label>
-                            <input type="date" className="form-control" />
+                            <input type="text" className="form-control" placeholder="Seguimiento Control y Soportes" />
                         </div>
                         <div className="form-group">
-                            <label>Seguimiento Plan Manejo de Oportunidades y Soportes</label>
-                            <textarea className="form-control" placeholder="Seguimiento Plan Manejo de Oportunidades y Soportes"></textarea>
+                            <label>Seguimiento Plan Manejo Oportunidades y Soportes</label>
+                            <input type="text" className="form-control" placeholder="Seguimiento Plan Manejo Oportunidades y Soportes" />
                         </div>
                         <div className="form-group">
                             <label>Fecha Seguimiento Plan Manejo</label>
-                            <input type="date" className="form-control" />
+                            <input type="date" className="form-control" placeholder="Fecha Seguimiento Plan Manejo" />
                         </div>
                         <div className="form-group">
                             <label>Seguimiento Plan Manejo Oportunidades</label>
-                            <textarea className="form-control" placeholder="Seguimiento Plan Manejo Oportunidades"></textarea>
+                            <input type="text" className="form-control" placeholder="Seguimiento Plan Manejo Oportunidades" />
                         </div>
                         <div className="form-group">
                             <label>Estado Final</label>
@@ -110,9 +108,11 @@ function View1() {
                     </div>
                 </div>
                 <button type="submit" className="btn btn-primary mt-3">Enviar</button>
+                <button type="submit" className="btn btn-secondary mt-3">Editar</button>
+                <button type="submit" className="btn btn-danger mt-3">Eliminar</button>
             </form>
         </div>
     );
 }
 
-export default View1;
+export default GestionRiesgosForm;
